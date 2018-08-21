@@ -1,0 +1,26 @@
+#!/bin/bash
+echo "============="
+declare -a myarr[0]="Divanshu"
+declare -a myarr
+myarr1=(pandurang patil pune banglore rajesh santhosh)
+myarr[1]="patil"
+echo "my name is ${myarr[0]} ${myarr[1]}"
+echo "-------------"
+echo "${myarr1[*]}"
+echo ${myarr1[2]}
+echo ${myarr1[@]}
+echo "==========="
+echo "Total no of elememts in array - ${#myarr1[*]}"
+echo "Total no of element in array - ${#myarr1[@]}"
+echo "size of word '${myarr1[2]}' is ${#myarr1[2]}"
+echo "${#myarr1[1]}"
+echo "${#myarr1[2]}"
+echo "============"
+#how to delete element in array
+unset myarr[1]
+echo "myarr is ${myarr[*]}"
+
+#how to assign element in array
+myarr[1]="system engineer"
+echo "myarr is ${myarr[*]}"
+echo ${myarr[@]}
